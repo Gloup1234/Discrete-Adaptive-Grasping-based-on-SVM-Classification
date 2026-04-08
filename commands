@@ -1,0 +1,20 @@
+sudo apt install python3-pip python3-venv -y
+# 创建一个名为 venv 的虚拟环境
+python3 -m venv venv
+
+# 激活虚拟环境 (此时命令行最前面会出现 (venv) 字样)
+source venv/bin/activate
+
+pip install keyboard numpy pyserial
+
+sudo chmod 666 /dev/ttyUSB0
+
+sudo chmod 666 /dev/ttyUSB*
+
+dmesg | grep tty
+
+sudo ./venv/bin/python auto_squeeze_collect.py
+
+sudo ./venv/bin/python ai_adaptive_ui.py
+
+sudo rm -rf data_raw

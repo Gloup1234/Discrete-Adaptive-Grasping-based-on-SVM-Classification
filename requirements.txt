@@ -1,0 +1,20 @@
+# RhinoV2.0 夹爪控制系统依赖库
+
+# GUI框架
+PyQt5>=5.15.0
+
+# 数据处理和可视化
+numpy>=1.19.0
+matplotlib>=3.3.0
+
+# 串口通信
+pyserial>=3.5
+
+# USB设备通信
+pyusb>=1.2.0
+
+U2CANFD_DEV 0:
+  VID: 0x34b7
+  PID: 0x6877
+  SN: 91F3E4730611D4E059B68138C08043B3
+
